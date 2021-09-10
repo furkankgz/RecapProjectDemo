@@ -10,6 +10,8 @@ Rent A Car Proje Ödevi - Yazılım Geliştirme Kampı
 
 * Özellik olarak : Id, BrandId, ColorId, ModelYear, DailyPrice, Description alanlarını ekleyiniz. (Brand = Marka)
 
-* InMemory formatta GetById, GetAll, Add, Update, Delete oprasyonlarını yazınız. </b>
+* InMemory formatta GetById, GetAll, Add, Update, Delete oprasyonlarını yazınız. 
 
-10/09/2021
+* Consolda test ediniz. 
+
+10/09/2021 </b>
