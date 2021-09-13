@@ -1,5 +1,6 @@
 # RecapProjectDemo
-Rent A Car Proje Ödevi - Yazılım Geliştirme Kampı  
+<h2>Rent A Car Proje Ödevi - Yazılım Geliştirme Kampı</h2>
+
 # Araba kiralama sistemi yazıyoruz.
 <b>  Yepyeni bir proje oluşturunuz. 
 * Adı ReCapProject olacak. (Tekrar ve geliştirme projesi) 
