@@ -14,7 +14,7 @@ Rent A Car Proje Ödevi - Yazılım Geliştirme Kampı
 
 * Consolda test ediniz. 
 
-10/09/2021 
+ <h3>10/09/2021</h3>
 # Güncelleme ( Yazılım Kampı 8. Gün Ödevi )
  
 Car nesnesine ek olarak;
@@ -38,5 +38,7 @@ Color-->Id,Name
 Araba ismi minimum 2 karakter olmalıdır
 
 Araba günlük fiyatı 0'dan büyük olmalıdır.
+
+ <h3>13.09.2021</h3>
 
 </b>
