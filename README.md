@@ -14,4 +14,29 @@ Rent A Car Proje Ödevi - Yazılım Geliştirme Kampı
 
 * Consolda test ediniz. 
 
-10/09/2021 </b>
+10/09/2021 
+# Güncelleme ( Yazılım Kampı 8. Gün Ödevi )
+ 
+Car nesnesine ek olarak;
+
+* Brand ve Color nesneleri ekleyiniz(Entity)
+
+Brand-->Id,Name
+
+Color-->Id,Name
+
+* Sql Server tarafında yeni bir veritabanı kurunuz. Cars,Brands,Colors tablolarını oluşturunuz. (Araştırma)
+
+* Sisteme Generic IEntityRepository altyapısı yazınız.
+
+* Car, Brand ve Color nesneleri için Entity Framework altyapısını yazınız.
+
+* GetCarsByBrandId , GetCarsByColorId servislerini yazınız.
+
+* Sisteme yeni araba eklendiğinde aşağıdaki kuralları çalıştırınız.
+
+Araba ismi minimum 2 karakter olmalıdır
+
+Araba günlük fiyatı 0'dan büyük olmalıdır.
+
+</b>
