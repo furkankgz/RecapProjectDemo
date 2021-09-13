@@ -15,9 +15,10 @@ Rent A Car Proje Ödevi - Yazılım Geliştirme Kampı
 * Consolda test ediniz. 
 
  <h3>10/09/2021</h3> </b>
+ 
 # Güncelleme ( Yazılım Kampı 8. Gün Ödevi )
-<b>
-Car nesnesine ek olarak;
+
+<b>Car nesnesine ek olarak;
 
 * Brand ve Color nesneleri ekleyiniz(Entity)
 
