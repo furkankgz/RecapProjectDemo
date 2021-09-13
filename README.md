@@ -25,7 +25,7 @@ Brand-->Id,Name
 
 Color-->Id,Name
 
-* Sql Server tarafında yeni bir veritabanı kurunuz. Cars,Brands,Colors tablolarını oluşturunuz. (Araştırma)
+* Sql Server tarafında yeni bir veritabanı kurunuz. Cars,Brands,Colors tablolarını oluşturunuz.
 
 * Sisteme Generic IEntityRepository altyapısı yazınız.
 
