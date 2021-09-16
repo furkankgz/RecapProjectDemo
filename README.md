@@ -15,11 +15,13 @@
 
 * Consolda test ediniz. 
 
- <h3>10/09/2021</h3> </b>
+ <h3>10/09/2021</h3> 
+ 
+</b>
  
 # Güncelleme ( Yazılım Kampı 8. Gün Ödevi )
 
-<b>Car nesnesine ek olarak;
+<b> Car nesnesine ek olarak;
 
 * Brand ve Color nesneleri ekleyiniz(Entity)
 
@@ -41,6 +43,21 @@ Araba ismi minimum 2 karakter olmalıdır
 
 Araba günlük fiyatı 0'dan büyük olmalıdır.
 
- <h3>13.09.2021</h3>
-
+ <h3>13.09.2021</h3> 
+</b>
+ 
+# Güncelleme ( Yazılım Kampı 9. Gün Ödevi )
+<b> 
+ 
+* CarRental Projenizde Core katmanı oluşturunuz
+ 
+* IEntity, IDto, IEntityRepository, EfEntityRepositoryBase dosyalarınızı 9. gün dersindeki gibi oluşturup ekleyiniz.
+ 
+* Car, Brand, Color sınıflarınız için tüm CRUD operasyonlarını hazır hale getiriniz.
+ 
+* Console'da Tüm CRUD operasyonlarınızı Car, Brand, Model nesneleriniz için test ediniz. GetAll, GetById, Insert, Update, Delete.
+ 
+* Arabaları şu bilgiler olacak şekilde listeleyiniz. CarName, BrandName, ColorName, DailyPrice. (İpucu : IDto oluşturup 3 tabloya join yazınız)
+ 
+ <h3>16.09.2021</h3>
 </b>
