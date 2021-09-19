@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Channels;
 using Business.Concrete;
+using Core.Utilities.Results;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
@@ -11,21 +13,46 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            //Test1();
             //AddCar();
             //AddBrand();
             //AddColor();
-
             CarTest();
+            //CarGetAll();
+        }
+
+        private static void CarGetAll()
+        {
+            CarManager carManager = new CarManager(new EfCarDal());
+            var result = carManager.GetAll();
+            if (result.Success == true)
+            {
+                foreach (var car in result.Data)
+                {
+                    Console.WriteLine(car.Description + " " + car.DailyPrice + " tl");
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
         }
 
         private static void CarTest()
         {
             CarManager carManager = new CarManager(new EfCarDal());
-            foreach (var car in carManager.GetCarDetails())
+            var result = carManager.GetCarDetails();
+            if (result.Success == true)
             {
-                Console.WriteLine(car.CarName + " | " + car.BrandName + " | " + car.ColorName + " ");
+                foreach (var car in result.Data)
+                {
+                    Console.WriteLine(car.CarName + " | " + car.BrandName + " | " + car.ColorName + " ");
+                }
             }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
+            
         }
 
         private static void AddColor()
@@ -34,10 +61,21 @@ namespace ConsoleUI
             colorManager.Add(new Color {ColorId = 1, ColorName = "Siyah"});
             colorManager.Add(new Color {ColorId = 2, ColorName = "Beyaz"});
             colorManager.Add(new Color {ColorId = 3, ColorName = "Mavi"});
-            foreach (var color in colorManager.GetAll())
+
+            var result = colorManager.GetAll();
+
+            if (result.Success == true)
             {
-                Console.WriteLine(color.ColorName);
+                foreach (var color in result.Data)
+                {
+                    Console.WriteLine(color.ColorName);
+                }
             }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
+
         }
 
         private static void AddBrand()
@@ -53,10 +91,19 @@ namespace ConsoleUI
                 BrandId = 2,
                 BrandName = "Honda"
             });
-            foreach (var brand in brandManager.GetAll())
+            var result = brandManager.GetAll();
+            if (result.Success == true)
             {
-                Console.WriteLine(brand.BrandName);
+                foreach (var brand in result.Data)
+                {
+                    Console.WriteLine(brand.BrandName);
+                }
             }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
+            
         }
 
         private static void AddCar()
@@ -73,29 +120,5 @@ namespace ConsoleUI
             });
         }
 
-        private static void Test1()
-        {
-            CarManager carManager = new CarManager(new EfCarDal());
-
-            Console.WriteLine("---------------------------------");
-
-            foreach (var cars in carManager.GetAll())
-            {
-                Console.WriteLine(cars.Description);
-            }
-
-            Console.WriteLine("-----------------------------------");
-
-            foreach (var car in carManager.GetByBrandId(3))
-            {
-                Console.WriteLine(car.Description + " : " + car.BrandId + "\n");
-            }
-
-            Console.WriteLine("--------------------------------------");
-            foreach (var car in carManager.GetUnitPrice(20000, 25000))
-            {
-                Console.WriteLine(car.Description + " : " + car.BrandId + "\n");
-            }
-        }
     }
 }
