@@ -61,3 +61,14 @@ Araba günlük fiyatı 0'dan büyük olmalıdır.
  
  <h3>16.09.2021</h3>
 </b>
+
+# Güncelleme ( Yazılım Kampı 10. Gün 1. Ödevi )
+<b> 
+Car Rental Projenizde;
+
+* Core katmanında Results yapılandırması yapınız.
+ 
+* Daha önce geliştirdiğiniz tüm Business sınıflarını bu yapıya göre refactor (kodu iyileştirme) ediniz.
+ 
+ <h3>19.09.2021</h3>
+</b>
