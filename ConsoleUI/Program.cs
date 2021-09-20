@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Channels;
 using Business.Concrete;
+using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
@@ -16,8 +17,119 @@ namespace ConsoleUI
             //AddCar();
             //AddBrand();
             //AddColor();
-            CarTest();
+            //CarTest();
             //CarGetAll();
+            //AddCustomer();
+            //AddUser();
+            //AddRental();
+        }
+
+        private static void AddRental()
+        {
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            rentalManager.Add(new Rental
+            {
+                RentalId = 1, CarId = 1, CustomerId = 1, RentDate = new DateTime(2021, 9, 18),
+                ReturnDate = new DateTime(2021, 9, 20)
+            });
+            rentalManager.Add(new Rental
+            {
+                RentalId = 2,
+                CarId = 2,
+                CustomerId = 2,
+                RentDate = new DateTime(2021, 9, 15),
+                ReturnDate = new DateTime(2021, 9, 19)
+            });
+            rentalManager.Add(new Rental
+            {
+                RentalId = 3,
+                CarId = 3,
+                CustomerId = 3,
+                RentDate = new DateTime(2021, 9, 16),
+                ReturnDate = new DateTime(2021, 9, 18)
+            });
+            var result = rentalManager.GetAll();
+            if (result.Success == true)
+            {
+                foreach (var rental in result.Data)
+                {
+                    Console.WriteLine(rental.ReturnDate + " " + rental.ReturnDate);
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
+        }
+
+        private static void AddUser()
+        {
+            UserManager userManager = new UserManager(new EfUserDal());
+            userManager.Add(new User
+            {
+                UserId = 1,
+                FirstName = "Furkan",
+                LastName = "Korkmazgöz",
+                Email = "furkan.kgz@gmail.com",
+                Password = "0000"
+            });
+            userManager.Add(new User
+            {
+                UserId = 2,
+                FirstName = "Ahmet",
+                LastName = "Ay",
+                Email = "ahmet.ay@gmail.com",
+                Password = "0000"
+            });
+            userManager.Add(new User
+            {
+                UserId = 3,
+                FirstName = "Mehmet",
+                LastName = "Can",
+                Email = "mehmet.can@gmail.com",
+                Password = "0000"
+            });
+            userManager.Add(new User
+            {
+                UserId = 4,
+                FirstName = "Mehmet",
+                LastName = "Can",
+                Email = "mehmet.can@gmail.com",
+                Password = "0000"
+            });
+            var result = userManager.GetAll();
+            if (result.Success == true)
+            {
+                foreach (var user in result.Data)
+                {
+                    Console.WriteLine(user.FirstName + " " + user.LastName);
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
+        }
+
+        private static void AddCustomer()
+        {
+            CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+            customerManager.Add(new Customer {CustomerId = 1, UserId = 1, CompanyName = "ETS"});
+            customerManager.Add(new Customer {CustomerId = 2, UserId = 2, CompanyName = "DTO"});
+            customerManager.Add(new Customer {CustomerId = 3, UserId = 3, CompanyName = "YKS"});
+            customerManager.Add(new Customer {CustomerId = 4, UserId = 4, CompanyName = "TYT"});
+            var result = customerManager.GetAll();
+            if (result.Success == true)
+            {
+                foreach (var customer in result.Data)
+                {
+                    Console.WriteLine(customer.CompanyName);
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
         }
 
         private static void CarGetAll()
@@ -112,10 +224,82 @@ namespace ConsoleUI
             carManager.Add(new Car
             {
                 Id = 1,
-                Description = "Honda 2006",
+                Description = "Mazda 2006",
                 BrandId = 1,
                 ColorId = 1,
                 DailyPrice = 2000,
+                ModelYear = 2006
+            });
+            carManager.Add(new Car
+            {
+                Id = 2,
+                Description = "Honda 2005",
+                BrandId = 2,
+                ColorId = 2,
+                DailyPrice = 1500,
+                ModelYear = 2005
+            });
+            carManager.Add(new Car
+            {
+                Id = 3,
+                Description = "Honda 2010",
+                BrandId = 2,
+                ColorId = 2,
+                DailyPrice = 5000,
+                ModelYear = 2010
+            });
+            carManager.Add(new Car
+            {
+                Id = 4,
+                Description = "Mazda 2012",
+                BrandId = 1,
+                ColorId = 2,
+                DailyPrice = 7000,
+                ModelYear = 2012
+            });
+            carManager.Add(new Car
+            {
+                Id = 5,
+                Description = "Mazda 2009",
+                BrandId = 1,
+                ColorId = 2,
+                DailyPrice = 3000,
+                ModelYear = 2009
+            });
+            carManager.Add(new Car
+            {
+                Id = 6,
+                Description = "Mazda 2007",
+                BrandId = 1,
+                ColorId = 1,
+                DailyPrice = 4500,
+                ModelYear = 2007
+            });
+            carManager.Add(new Car
+            {
+                Id = 7,
+                Description = "Honda 2008",
+                BrandId = 2,
+                ColorId = 1,
+                DailyPrice = 4500,
+                ModelYear = 2008
+            });
+            carManager.Add(new Car
+            {
+                Id = 8,
+                Description = "Honda 2006",
+                BrandId = 2,
+                ColorId = 1,
+                DailyPrice = 2200,
+                ModelYear = 2006
+            });
+            carManager.Add(new Car
+            {
+                Id = 9,
+                Description = "Honda 2005",
+                BrandId = 2,
+                ColorId = 1,
+                DailyPrice = 1500,
                 ModelYear = 2005
             });
         }
