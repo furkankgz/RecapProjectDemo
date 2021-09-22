@@ -72,3 +72,26 @@ Car Rental Projenizde;
  
  <h3>19.09.2021</h3>
 </b>
+
+# Güncelleme ( Yazılım Kampı 10. Gün 4. Ödevi )
+<b> 
+CarRental projenizde;
+
+* Kullanıcılar tablosu oluşturunuz. Users-->Id,FirstName,LastName,Email,Password
+ 
+* Müşteriler tablosu oluşturunuz. Customers-->UserId,CompanyName (Kullanıcılar ve müşteriler ilişkilidir).
+ 
+* Arabanın kiralanma bilgisini tutan tablo oluşturunuz. Rentals-->Id, CarId, CustomerId, RentDate(Kiralama Tarihi), ReturnDate(Teslim Tarihi). Araba teslim edilmemişse ReturnDate null'dır.
+ 
+* Projenizde bu entity'leri oluşturunuz.
+ 
+* CRUD operasyonlarını yazınız.
+ 
+* Yeni müşteriler ekleyiniz.
+ 
+* Arabayı kiralama imkanını kodlayınız. Rental-->Add
+ 
+* Arabanın kiralanabilmesi için arabanın teslim edilmesi gerekmektedir.
+
+ <h3>21.09.2021</h3>
+</b>
