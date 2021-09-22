@@ -95,3 +95,16 @@ CarRental projenizde;
 
  <h3>21.09.2021</h3>
 </b>
+
+# Güncelleme ( Yazılım Kampı 11. Gün 1. Ödevi )
+<b> 
+Car Rental Projenizde;
+
+* WebAPI katmanını kurunuz.
+ 
+* Business katmanındaki tüm servislerin Api karşılığını yazınız.
+ 
+* Postman'de test ediniz.
+ 
+ <h3>22.09.2021</h3>
+</b>
