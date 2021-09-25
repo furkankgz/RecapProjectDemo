@@ -108,3 +108,12 @@ Car Rental Projenizde;
  
  <h3>22.09.2021</h3>
 </b>
+
+# Güncelleme ( Yazılım Kampı 12. Gün 1. Ödevi )
+<b> 
+Car Rental Projenizde; 
+ 
+* Car Rental Projenize Autofac desteği ekleyiniz.
+ 
+ <h3>22.09.2021</h3>
+</b>
