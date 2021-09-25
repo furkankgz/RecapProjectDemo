@@ -115,5 +115,11 @@ Car Rental Projenizde;
  
 * Car Rental Projenize Autofac desteği ekleyiniz.
  
+* FluentValidation desteği ekleyiniz.
+ 
+* AOP desteği ekleyiniz.
+ 
+* ValidationAspect ekleyiniz.
+ 
  <h3>22.09.2021</h3>
 </b>
