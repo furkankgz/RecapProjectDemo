@@ -121,5 +121,5 @@ Car Rental Projenizde;
  
 * ValidationAspect ekleyiniz.
  
- <h3>22.09.2021</h3>
+ <h3>25.09.2021</h3>
 </b>
