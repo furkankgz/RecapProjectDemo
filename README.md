@@ -108,3 +108,18 @@ Car Rental Projenizde;
  
  <h3>22.09.2021</h3>
 </b>
+
+# Güncelleme ( Yazılım Kampı 12. Gün Ödevi )
+<b> 
+Car Rental Projenizde; 
+ 
+* Car Rental Projenize Autofac desteği ekleyiniz.
+ 
+* FluentValidation desteği ekleyiniz.
+ 
+* AOP desteği ekleyiniz.
+ 
+* ValidationAspect ekleyiniz.
+ 
+ <h3>25.09.2021</h3>
+</b>
