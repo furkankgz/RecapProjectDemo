@@ -12,11 +12,14 @@ namespace Business.Constants
         public static string UsersAdded = "Kullanıcı eklendi.";
         public static string CustomersAdded = "Müşteri eklendi.";
         public static string RentalsAdded = "Araba kiralandı.";
+        public static string CarImageAdded = "Resimler eklendi.";
+        public static string ImagesAddedSuccessfully = "Resimler başarıyla eklendi.";
 
         public static string CarInvalidName = "Araba ismi geçersiz.";
         public static string BrandInvalidName = "Marka ismi geçersiz.";
         public static string ColorInvalidName = "Renk ismi geçersiz.";
         public static string RentalNotReturn = "Araç dönmedi.";
+        public static string FailedCarImageAdd = "Bir araba 5'ten fazla resime sahip olamaz.";
 
         public static string CarUpdated = "Araba güncellendi.";
         public static string BrandUpdated = "Marka güncellendi.";
@@ -24,6 +27,7 @@ namespace Business.Constants
         public static string UserUpdated = "Kullanıcı güncellendi.";
         public static string CustomerUpdated = "Müşteri güncellendi.";
         public static string RentalUpdated = "Kiralama işlemi güncellendi.";
+        public static string CarImagesUpdated = "Araç resimleri güncellendi.";
 
         public static string CarDeleted = "Araba silindi.";
         public static string BrandDeleted = "Marka silindi.";
@@ -31,6 +35,7 @@ namespace Business.Constants
         public static string UserDeleted = "Kullanıcı silindi.";
         public static string CustomerDeleted = "Müşteri silindi.";
         public static string RentalDeleted = "Kiralama işlemi silindi.";
+        public static string CarImagesDeleted = "Araç resimleri silindi.";
 
         public static string MaintenanceTime = "Sistem bakımda";
 
@@ -40,5 +45,7 @@ namespace Business.Constants
         public static string UsersListed = "Kullanıcılar Listelendi.";
         public static string CustomersListed = "Müşteriler Listelendi.";
         public static string RentalsListed = "Kiralanan araçlar Listelendi.";
+        public static string CarImagesListed = "Araç resimleri listelendi.";
+        
     }
 }
