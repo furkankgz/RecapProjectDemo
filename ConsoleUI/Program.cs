@@ -20,7 +20,6 @@ namespace ConsoleUI
             //CarTest();
             //CarGetAll();
             //AddCustomer();
-            //AddUser();
             //AddRental();
         }
 
@@ -62,54 +61,7 @@ namespace ConsoleUI
             }
         }
 
-        private static void AddUser()
-        {
-            UserManager userManager = new UserManager(new EfUserDal());
-            userManager.Add(new User
-            {
-                UserId = 1,
-                FirstName = "Furkan",
-                LastName = "Korkmazgöz",
-                Email = "furkan.kgz@gmail.com",
-                Password = "0000"
-            });
-            userManager.Add(new User
-            {
-                UserId = 2,
-                FirstName = "Ahmet",
-                LastName = "Ay",
-                Email = "ahmet.ay@gmail.com",
-                Password = "0000"
-            });
-            userManager.Add(new User
-            {
-                UserId = 3,
-                FirstName = "Mehmet",
-                LastName = "Can",
-                Email = "mehmet.can@gmail.com",
-                Password = "0000"
-            });
-            userManager.Add(new User
-            {
-                UserId = 4,
-                FirstName = "Mehmet",
-                LastName = "Can",
-                Email = "mehmet.can@gmail.com",
-                Password = "0000"
-            });
-            var result = userManager.GetAll();
-            if (result.Success == true)
-            {
-                foreach (var user in result.Data)
-                {
-                    Console.WriteLine(user.FirstName + " " + user.LastName);
-                }
-            }
-            else
-            {
-                Console.WriteLine(result.Message);
-            }
-        }
+       
 
         private static void AddCustomer()
         {
