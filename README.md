@@ -147,7 +147,7 @@ Car Rental Projenizde;
  <h3>28.09.2021</h3>
 </b>
 
-# Güncelleme ( Yazılım Kampı 13. Gün Ödevi )
+# Güncelleme ( Yazılım Kampı 14. Gün Ödevi )
 <b> 
 Car Rental Projenizde; 
  
