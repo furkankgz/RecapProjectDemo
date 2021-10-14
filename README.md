@@ -146,3 +146,12 @@ Car Rental Projenizde;
  
  <h3>28.09.2021</h3>
 </b>
+
+# Güncelleme ( Yazılım Kampı 14. Gün Ödevi )
+<b> 
+Car Rental Projenizde; 
+ 
+* JWT entegrasyonu yapınız.
+ 
+ <h3>12.10.2021</h3>
+</b>
